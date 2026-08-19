@@ -25,7 +25,7 @@ if (contactForm) {
         formMessage.textContent =
             `Thanks, ${name}! Your message has been received.`;
 
-        contactForm.reset();
+        
 
     });
 
