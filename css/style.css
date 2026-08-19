@@ -455,4 +455,91 @@ footer {
     .page-header h1 {
         font-size: 48px;
     }
+    /* RESPONSIVE */
+
+    @media (max-width: 800px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        z-index: 100;
+
+        display: none;
+        flex-direction: column;
+
+        background: var(--surface);
+        border: 1px solid var(--border);
+        padding: 20px;
+        border-radius: 8px;
+        gap: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    main {
+        padding: 30px 20px 60px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        min-height: auto;
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: clamp(40px, 12vw, 60px);
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .skill-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .page-header {
+        padding: 60px 0 40px;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .contact-info h2,
+    .skills-section h2 {
+        font-size: 30px;
+    }
+}
 }
